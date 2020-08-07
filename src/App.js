@@ -22,6 +22,23 @@ class App extends Component {
     )
   }
 
+plusOne = () => {
+    this.setState(
+      {count: this.state.count + 1}
+     
+    )
+  }
+
+  minusOne = () => {
+    this.setState(
+      {count: this.state.count + 1}
+     
+    )
+  }
+
+
+
+
 
 
   render () {
@@ -38,6 +55,9 @@ return (
       <br/>
         <button onClick={this.countDown}>Count Down</button>
         <button onClick={this.countUp}>Count Up</button>   
+        <button onClick={this.plusOne}>+1</button>
+        <button onClick={this.minusOne}>-1</button>   
+       
        
         </center>
       </div>
